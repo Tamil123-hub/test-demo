@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Management System</h1>
+    
+    <!-- Student List -->
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Aryan</td>
+          <td>
+            <button onclick="markAttendance(1, 'present')">Present</button>
+            <button onclick="markAttendance(1, 'absent')">Absent</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Neha</td>
+          <td>
+            <button onclick="markAttendance(2, 'present')">Present</button>
+            <button onclick="markAttendance(2, 'absent')">Absent</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Karan</td>
+          <td>
+            <button onclick="markAttendance(3, 'present')">Present</button>
+            <button onclick="markAttendance(3, 'absent')">Absent</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Summary -->
+    <h2>Attendance Summary</h2>
+    <div id="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
